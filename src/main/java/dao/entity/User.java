@@ -1,4 +1,4 @@
-package Entity;
+package dao.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
@@ -11,10 +11,11 @@ import org.springframework.data.annotation.Id;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "user")
-@AllArgsConstructor
-@NoArgsConstructor
 public class User {
 
     @Id
