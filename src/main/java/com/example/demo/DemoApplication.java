@@ -6,8 +6,8 @@ import org.springframework.boot.persistence.autoconfigure.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@EntityScan("com.example.demo.dao.entity")
-@EnableJpaRepositories("com.example.demo.dao.repository")
+@EntityScan("dao.entity")
+@EnableJpaRepositories("dao.repository")
 public class DemoApplication {
 
 	public static void main(String[] args) {
